@@ -3211,5 +3211,284 @@ module.exports = {
 			},
 		},
 
+		{
+			sourceRoute: '/interface/v1/mentors/details/:id',
+			type: 'POST',
+			inSequence: true,
+			orchestrated: true,
+			targetRoute: {
+				path: '/mentoring/v1/mentors/details/:id',
+				type: 'POST',
+				functionName: 'mentorDetails',
+			},
+		},
+		{
+			sourceRoute: '/interface/v1/profile/read',
+			type: 'GET',
+			inSequence: true,
+			orchestrated: true,
+			targetRoute: {
+				path: '/mentoring/v1/profile/read',
+				type: 'GET',
+				functionName: 'mentoringProfile',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/filterList',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/reports/filterList	',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/initiate',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/connections/initiate',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/pending',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/connections/pending',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/accept',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/connections/accept',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/reject',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/connections/reject',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/getInfo',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/connections/getInfo',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/connections/list',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/connections/list',
+
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/reportData',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/reports/reportData	',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/create',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/reports/create',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/read',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/reports/read',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/update',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/reports/update',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/reports/delete',
+			type: 'DELETE',
+			targetRoute: {
+				path: '/mentoring/v1/reports/delete',
+				type: 'DELETE',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-type/create',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-type/create',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-type/read',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/report-type/read',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-type/update',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-type/update',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-type/delete',
+			type: 'DELETE',
+			targetRoute: {
+				path: '/mentoring/v1/report-type/delete',
+				type: 'DELETE',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-mapping/create',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-mapping/create',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-mapping/read',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/report-mapping/read',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-mapping/update',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-mapping/update',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-mapping/delete',
+			type: 'DELETE',
+			targetRoute: {
+				path: '/mentoring/v1/report-mapping/delete',
+				type: 'DELETE',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-queries/create',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-queries/create',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-queries/read',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/report-queries/read',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-queries/update',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/report-queries/update',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/report-queries/delete',
+			type: 'DELETE',
+			targetRoute: {
+				path: '/mentoring/v1/report-queries/delete',
+				type: 'DELETE',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/role-extension/create',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/role-extension/create',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/role-extension/read',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/role-extension/read',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/role-extension/update',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/role-extension/update',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/role-extensions/delete',
+			type: 'DELETE',
+			targetRoute: {
+				path: '/mentoring/v1/role-extension/delete',
+				type: 'DELETE',
+			},
+		},
+    {
+			sourceRoute: '/mentoring/v1/profile/getCommunicationToken',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/profile/getCommunicationToken',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/profile/logout',
+			type: 'POST',
+			targetRoute: {
+				path: '/mentoring/v1/profile/logout',
+				type: 'POST',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/profile/details',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/profile/details',
+				type: 'GET',
+			},
+		},
+		{
+			sourceRoute: '/mentoring/v1/profile/details/:id',
+			type: 'GET',
+			targetRoute: {
+				path: '/mentoring/v1/profile/details/:id',
+				type: 'GET',
+			},
+		},
 	],
 }
