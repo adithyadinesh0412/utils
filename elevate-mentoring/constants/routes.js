@@ -2137,6 +2137,15 @@ module.exports = {
 			},
 		},
 		{
+			sourceRoute: '/user/v1/organization/details',
+			type: 'GET',
+			service: 'user',
+			targetRoute: {
+				path: '/user/v1/organization/details',
+				type: 'GET',
+			},
+		},
+		{
 			sourceRoute: '/user/v1/admin/addOrgAdmin',
 			type: 'POST',
 			service: 'user',
@@ -3220,8 +3229,7 @@ module.exports = {
 				path: '/mentoring/v1/resources/delete/:id',
 				type: 'GET',
 			},
-		}
-
+		},
 		{
 			sourceRoute: '/interface/v1/mentors/details/:id',
 			type: 'POST',
